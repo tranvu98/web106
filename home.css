@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background: rgb(227, 233, 233);
+}
+
+#wrapper header .bg-body-tertiary {
+    background-color: green !important;
+
+}
+
+.navbar {
+    --bs-navbar-padding-y: 0rem;
+}
+
+#wrapper header nav div {
+    background-color: green;
+
+}
+
+#wrapper header nav div a {
+    color: white;
+    font-weight: bold;
+}
+
+#wrapper header nav div a:hover {
+    color: orange;
+}
+
+#wrapper header nav .dropdown-menu {
+    background-color: green;
+}
+
+.btn {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+.carousel-item img {
+    height:450px;
+    object-fit: cover;
+}
+.col {
+    display: flex;
+    margin: 10px 0;
+}
+
+.col-wrap {
+    padding: 10px;
+    background-color: white;
+}
+
+.col-wrap h6 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col-wrap p {
+    text-align: justify;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.banner-footer {
+    position: relative;
+}
+
+.banner-footer img {
+    height: 60%;
+}
+
+.detail {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.detail h3 {
+    font-size: 40px;
+    width: 100%;
+}
+
+.detail h5 {
+    font-size: 20px;
+}
+
+.detail i {
+    width: 100%;
+    margin: 10px 0;
+
+}
+
+.foot-wrap {
+    background-color: rgb(63, 63, 63);
+}
+
+.footer {
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+}
+
+.pay i {
+    font-size: 24px;
+}
+
+.detail h1, .detail h3, .detail h5 {
+    margin: 10px 0;
+}
+
+@media screen and (max-width:992px) {
+    #wrapper header nav div {
+        text-align: center;
+    }
+
+    #wrapper header nav form {
+        margin-bottom: 20px;
+    }
+
+    .banner-footer img {
+        height: 400px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner-footer img {
+        height: 400px;
+    }
+
+    .detail {
+
+        top: 5%;
+        left: 5%;
+    }
+
+    .detail h1 {
+        font-size: 40px;
+    }
+
+    .detail h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .detail h1 {
+        font-size: 30px;
+    }
+
+    .detail h3 {
+        font-size: 25px;
+    }
+
+    .banner-footer img {
+        height: 300px;
+        z-index: 1;
+    }
+    .detail h1,.detail h3,.detail h5{
+        width: 100%;
+    }
+    .detail{
+        left: auto;
+        text-align: center;
+    }
+}

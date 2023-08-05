@@ -1,0 +1,144 @@
+.detail-form, .summary-form {
+    background-color: rgb(211, 174, 186);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.detail-form h3, .detail-form p {
+    width: 100%;
+}
+
+.left-form, .right-form, .left-summary, .right-summary {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-form input, .right-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 4px;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 4px;
+}
+
+.submit {
+    width: 80px;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.submit:hover {
+    background-color: orange;
+}
+
+.summary-form {
+    padding: 10px;
+}
+
+.summary-form h6 {
+    text-align: center;
+}
+
+.left-summary, .right-summary {
+    background-color: rgb(201, 134, 134);
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.left-summary input, .right-summary input {
+    width: 96%;
+    margin: 0 10px;
+    padding: 0 4px;
+}
+
+.left-summary p, .right-summary p {
+    margin-left: 10px;
+}
+
+.left-summary label, .right-summary label {
+    margin-bottom: 12px;
+}
+
+.company {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-company, .right-company {
+    width: 44%;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.left-company h5 {
+    width: 100%;
+}
+
+.left-company {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.left-company a {
+    width: 40%;
+    padding: 10px 0;
+}
+
+.right-company {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.right-company a {
+    padding: 10px 0;
+}
+
+@media screen and (max-width:768px) {
+    .left-company a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .detail-form, .summary-form, .company {
+        flex-direction: column;
+    }
+
+    .company {
+        text-align: center;
+    }
+
+    .left-form, .right-form, .left-summary ,.right-summary{
+        width: 100%;
+    }
+
+    .left-company, .right-company {
+        width: 96%;
+        margin: 10px;
+    }
+    
+}
